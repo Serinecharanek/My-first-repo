@@ -1,0 +1,240 @@
+/* Turn on border-box model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive hero section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: url(https://assets.codepen.io/6306176/gulp-coffee-closeup.jpg) no-repeat center center/cover;
+    color: #F2F2F2;
+}
+
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  h2{
+    position: center;
+  }
+  /* make images flexible */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  a {
+    color: #59331d;
+  }
+  a:hover {
+    text-decoration: none;
+
+  }
+  header {
+    border-bottom: 10px solid #d98555;
+  }
+
+  .img-1{
+    float: right;
+    width:30% ;
+  }
+
+  .img-2{
+    float: left;
+    width:30% ;
+    padding: 7px;
+  }
+
+.space{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        flex-flow: row wrap;
+        justify-content: space-between;      
+}
+
+.text{
+    list-style-type: none; 
+    
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.text li{
+    margin: 5px 0;
+}
+
+.text a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.text a:hover {
+    text-decoration: underline; 
+    color: #082B59; 
+}
+
+  /* navbar styling */
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+  }
+  /* max width on the image in pixels */
+  nav .logo img {
+    max-width: 150px;
+  }
+  /* flex basis on the image container, li */
+  nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+
+ul{
+    justify-content: center;
+    text-align: center;
+}
+
+li{
+    text-decoration: none;
+}
+  /* establishes a white background */
+  .main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+
+
+/* About and product previews */
+.about-preview, .products-preview, .contact-preview {
+    padding: 2rem;
+    text-align: center;
+    background-color: #F2F2F2;
+    color: #082B59;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+  
+/* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  article {
+    flex-basis: 73%;
+  }
+  figure {
+    margin: 3rem 0 0 0;
+    flex-basis: 25%;
+    background-color: #59331d;
+    border-radius: 10px;
+  }
+ 
+  
+  figure img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+  }
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
+  .button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+  }
+  footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+
+  /* Responsive Design */
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    figure {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 4rem;
+        font-size: 1.2rem;
+    }
+
+    .about-preview, .products-preview, .contact-preview {
+        padding: 3rem;
+    }
+}
